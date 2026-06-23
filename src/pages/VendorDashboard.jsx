@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 
 import VenderSidebar from "../components/VenderSidebar";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import api from "../api/axiosInstance";
 
 import styles from "./cssFolder/VendorDashboard.module.css";

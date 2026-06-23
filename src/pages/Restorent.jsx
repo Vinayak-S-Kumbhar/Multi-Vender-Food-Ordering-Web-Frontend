@@ -4,7 +4,7 @@ import { QueryClient, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link, useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import Food from "../components/Food";
 import { addToCart } from "../utils/foodItemHelper";
 import Ratings from "../components/Ratings";

@@ -9,7 +9,7 @@ import OwnerSidebar from "../components/OwnerSidebar";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axiosInstance";
 import { useQueries, useQuery } from "@tanstack/react-query";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 
 const getStatusClass = (status) => {
   switch (status) {

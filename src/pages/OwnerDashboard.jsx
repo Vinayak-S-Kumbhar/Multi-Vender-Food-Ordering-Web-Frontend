@@ -12,7 +12,7 @@ import {
 
 import { HiTrendingUp } from "react-icons/hi";
 import { useQuery } from "@tanstack/react-query";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import api from "../api/axiosInstance";
 
 const stats = [

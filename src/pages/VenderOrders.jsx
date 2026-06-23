@@ -1,7 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import VenderSidebar from "../components/venderSidebar";
 import style from "./cssFolder/VenderOrders.module.css";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import api from "../api/axiosInstance";
 import { useState } from "react";
 import { UpdateStatus } from "../utils/OrderManagement";

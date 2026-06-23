@@ -10,7 +10,7 @@ import axios from "axios";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import Loading from "./loading";
+import Loading from "./Loading";
 import ConfirmModal from "./ConfirmModal";
 
 const FetchUserInfo = (userId) => {

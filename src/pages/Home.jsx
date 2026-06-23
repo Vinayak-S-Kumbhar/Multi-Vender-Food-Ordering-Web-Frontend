@@ -7,7 +7,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import api from "../api/axiosInstance";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import Food from "../components/Food";

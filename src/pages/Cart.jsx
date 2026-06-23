@@ -3,7 +3,7 @@ import style from "./cssFolder/Cart.module.css";
 import { useState } from "react";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 const DELIVERY_FEE = 40;

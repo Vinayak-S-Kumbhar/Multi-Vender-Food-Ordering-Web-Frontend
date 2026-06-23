@@ -15,7 +15,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import Food from "../components/Food";
 import { FcRating } from "react-icons/fc";

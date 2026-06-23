@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 import api from "../api/axiosInstance";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
 import Food from "../components/Food";
 

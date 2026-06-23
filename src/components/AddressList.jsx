@@ -11,7 +11,7 @@ import {
   FiClock,
 } from "react-icons/fi";
 import { FaHotel } from "react-icons/fa";
-import Loading from "./loading";
+import Loading from "./Loading";
 import toast from "react-hot-toast";
 
 const FetchAddresses = async (userId) => {

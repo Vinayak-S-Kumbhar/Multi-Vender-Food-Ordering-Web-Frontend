@@ -2,7 +2,7 @@ import styles from "./cssFolder/Item.module.css";
 import { FaStar, FaRegStar, FaPlus } from "react-icons/fa";
 import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
-import Loading from "./loading";
+import Loading from "./Loading";
 import { useContext, useState } from "react";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";

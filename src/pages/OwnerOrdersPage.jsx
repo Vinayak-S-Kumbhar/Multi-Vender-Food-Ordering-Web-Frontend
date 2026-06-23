@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../api/axiosInstance";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from "react-intersection-observer";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import toast from "react-hot-toast";
 
 const FetchOrders = ({ pageParam = 0 }) => {

@@ -25,7 +25,7 @@ import OwnerSidebar from "../components/OwnerSidebar";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { FaStar } from "react-icons/fa";
 import toast from "react-hot-toast";
 import ConfirmModal from "../components/ConfirmModal";

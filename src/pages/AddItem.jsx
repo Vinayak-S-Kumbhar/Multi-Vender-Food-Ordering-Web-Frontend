@@ -5,7 +5,7 @@ import { categerys } from "../assets/assets";
 import { useRef, useState } from "react";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 const AddItem = ({ activeHotel }) => {

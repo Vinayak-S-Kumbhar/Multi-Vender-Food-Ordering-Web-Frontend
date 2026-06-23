@@ -3,7 +3,7 @@ import OwnerSidebar from "../components/OwnerSidebar";
 import styles from "./cssFolder/RestaurantDetails.module.css";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import api from "../api/axiosInstance";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 import { UpdateRestorentStatus } from "../utils/VenderManagmentHelper";

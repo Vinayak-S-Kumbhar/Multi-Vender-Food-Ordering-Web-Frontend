@@ -4,7 +4,7 @@ import { FcRating } from "react-icons/fc";
 import { useInfiniteQuery } from "@tanstack/react-query";
 
 import styles from "./cssFolder/Ratings.module.css";
-import Loading from "./loading";
+import Loading from "./Loading";
 import api from "../api/axiosInstance";
 import { useParams } from "react-router-dom";
 

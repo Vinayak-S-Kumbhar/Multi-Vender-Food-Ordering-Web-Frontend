@@ -4,7 +4,7 @@ import Item from "../components/Food.jsx";
 import { useContext, useEffect, useState } from "react";
 import api from "../api/axiosInstance.js";
 import toast from "react-hot-toast";
-import Loading from "../components/loading.jsx";
+import Loading from "../components/Loading.jsx";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import Food from "../components/Food.jsx";
 import { useInView } from "react-intersection-observer";
