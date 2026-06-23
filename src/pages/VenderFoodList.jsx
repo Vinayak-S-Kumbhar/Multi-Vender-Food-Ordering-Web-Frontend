@@ -1,4 +1,4 @@
-import VenderSidebar from "../components/venderSidebar";
+import VenderSidebar from "../components/VenderSidebar";
 import style from "./cssFolder/ListItems.module.css";
 import api from "../api/axiosInstance";
 import Loading from "../components/Loading";
