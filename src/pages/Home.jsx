@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import Navbar from "../components/navbar";
 import { assets } from "../assets/assets";
 import { categerys } from "../assets/assets";
 import style from "./cssFolder/Home.module.css";
