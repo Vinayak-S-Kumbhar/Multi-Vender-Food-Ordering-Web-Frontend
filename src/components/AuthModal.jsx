@@ -104,7 +104,7 @@ const AuthModal = ({ setAuthTrigger, setSigneIn }) => {
                 className={styles.socialBtn}
                 onClick={() => {
                   window.location.href =
-                    "http://localhost:8080/oauth2/authorization/google";
+                    "https://multi-vender-food-ordering-web-fron.vercel.app/oauth2/authorization/google";
                 }}
               >
                 <FaGoogle /> Continue with Google
