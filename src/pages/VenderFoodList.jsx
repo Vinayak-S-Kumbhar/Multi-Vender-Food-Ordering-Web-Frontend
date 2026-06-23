@@ -1,7 +1,7 @@
 import VenderSidebar from "../components/venderSidebar";
 import style from "./cssFolder/ListItems.module.css";
 import api from "../api/axiosInstance";
-import Loading from "../components/loading";
+import Loading from "../components/Loading";
 import toast from "react-hot-toast";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import Food from "../components/Food";
