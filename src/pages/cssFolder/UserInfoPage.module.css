@@ -1,0 +1,271 @@
+.container {
+  padding: 24px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.profileCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.leftSection {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e8f0ff;
+  color: #2563eb;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #fff4db;
+  color: #9a6700;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.active {
+  background: #e7f8ed;
+  color: #0f8c45;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.statsGrid {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.statCard {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.statCard svg {
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.statCard span {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+}
+
+.statCard h3 {
+  margin-top: 8px;
+}
+
+.tabs {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  border: none;
+  background: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.activeTab {
+  background: #2563eb !important;
+  color: white;
+}
+
+.overviewGrid {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.addressBox {
+  display: flex;
+  gap: 14px;
+  line-height: 1.8;
+}
+
+.listWrapper {
+  margin-top: 20px;
+}
+
+.orderCard {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderRight {
+  text-align: right;
+}
+
+.items {
+  display: block;
+  margin: 6px 0;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.delivered {
+  background: #e7f8ed;
+  color: #0f8c45;
+}
+
+.out_of_delivery {
+  background: #fff3cd;
+  color: #b7791f;
+}
+
+.restaurantList {
+  margin-top: 20px;
+}
+
+.restaurantCard {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.restaurantHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.approved {
+  background: #e7f8ed;
+  color: #0f8c45;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.pending {
+  background: #fff3cd;
+  color: #b7791f;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.restaurantStats {
+  margin-top: 15px;
+  display: flex;
+  gap: 25px;
+}
+
+.restaurantStats div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.loaderContainer {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overviewGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .orderCard {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .restaurantStats {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    overflow-x: auto;
+  }
+}

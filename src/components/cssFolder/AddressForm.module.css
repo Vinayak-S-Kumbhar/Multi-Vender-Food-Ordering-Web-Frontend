@@ -1,0 +1,355 @@
+.formContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Add Address Button */
+.addAddressButton {
+  width: 100%;
+  height: 60px;
+  border: 3px dashed #f0c4aa;
+  border-radius: 24px;
+  background: #ffffff;
+  color: #ff6a21;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  transition: all 0.2s ease;
+}
+
+.addAddressButton:hover {
+  background: #fffaf7;
+  border-color: #ffb78e;
+}
+
+.addAddressButton:active {
+  transform: scale(0.99);
+}
+
+.addAddressButton span {
+  line-height: 1;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Location Button */
+.locationButton {
+  width: 100%;
+  border: 1px solid #f2d9cb;
+  background: #fff6f1;
+  color: #d16c32;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.locationButton:hover {
+  background: #fff1ea;
+}
+
+/* Divider */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ececec;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 14px;
+  color: #888;
+  font-size: 15px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Labels */
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+
+.label span {
+  color: #ff6a21;
+}
+
+.optional {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #999 !important;
+  font-weight: 500;
+}
+
+/* Address Type Buttons */
+.addressTypes {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.typeButton {
+  height: 48px;
+  padding: 0 18px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.typeButton:hover {
+  border-color: #ff6a21;
+}
+
+.activeType {
+  background: #fff3ed;
+  border-color: #ff6a21;
+  color: #ff6a21;
+}
+
+/* Two Column Layout */
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #e7e3da;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 17px;
+  outline: none;
+  background: #fff;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #ff6a21;
+  box-shadow: 0 0 0 3px rgba(255, 106, 33, 0.1);
+}
+
+.input::placeholder {
+  font-size: 17px;
+  color: #999;
+}
+
+/* Phone Number */
+.phoneWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.countryCode {
+  width: 70px;
+  height: 56px;
+  border: 1px solid #e7e3da;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f3ec;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.phoneInput {
+  flex: 1;
+  height: 56px;
+  border: 1px solid #e7e3da;
+  border-radius: 0 12px 12px 0;
+  padding: 0 16px;
+  font-size: 17px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.phoneInput:focus {
+  border-color: #ff6a21;
+}
+
+.phoneInput::placeholder {
+  color: #999;
+}
+
+/* Pincode */
+.pincodeSection {
+  width: 50%;
+}
+
+/* Checkbox */
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+}
+
+.checkboxWrapper input {
+  width: 18px;
+  height: 18px;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.cancelButton {
+  flex: 1;
+  height: 56px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cancelButton:hover {
+  background: #f8f8f8;
+}
+
+.saveButton {
+  flex: 2;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff6a21, #ff5a1f);
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.saveButton:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+
+  .twoColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .pincodeSection {
+    width: 100%;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .saveButton,
+  .cancelButton {
+    width: 100%;
+  }
+
+  .typeButton {
+    flex: 1;
+    justify-content: center;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 22px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .input,
+  .phoneInput,
+  .countryCode {
+    font-size: 15px;
+    height: 52px;
+  }
+
+  .typeButton {
+    font-size: 14px;
+  }
+
+  .locationButton {
+    font-size: 15px;
+  }
+}

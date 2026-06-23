@@ -1,0 +1,666 @@
+.page {
+  background: #fafafa;
+  min-height: 100vh;
+  color: #1f2937;
+  padding-bottom: 40px;
+  margin: 0 7%;
+}
+
+/* HERO */
+
+.hero {
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 153, 0, 0.35),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #fff8f0, #ffd180, #ff8f00);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.heroContent {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge,
+.openBadge {
+  padding: 10px 16px;
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.openBadge {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.restaurantName {
+  font-size: 64px;
+  margin-top: 18px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.cuisine {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #6b7280;
+}
+
+/* OFFERS */
+
+.offerWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  margin: -40px 40px 0;
+}
+
+.offerCard {
+  background: white;
+  border-radius: 20px;
+  padding: 18px;
+  margin-top: 55px;
+  display: flex;
+  gap: 15px;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.offerCard h4 {
+  margin: 0;
+  color: #f59e0b;
+}
+
+.offerCard p {
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+/* RESTAURANT INFO */
+
+.restaurantInfo {
+  margin: 30px 40px;
+  background: white;
+
+  border-radius: 20px;
+  padding: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.infoItem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* TABS */
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+  padding: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: #f59e0b;
+  border-bottom: 3px solid #f59e0b !important;
+}
+
+/* CATEGORY */
+
+.categoryButtons {
+  display: flex;
+  gap: 16px;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+.categoryButtons button {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 12px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.activeCategory {
+  background: #f59e0b !important;
+  color: white;
+  border: none !important;
+}
+
+/* SEARCH */
+
+.searchContainer {
+  padding: 0 40px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 18px;
+  border-radius: 18px;
+
+  border: 1px solid #e5e7eb;
+  background: white;
+  font-size: 16px;
+}
+
+/* CARDS */
+
+.cardsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  padding: 30px 40px;
+}
+
+.smallCard {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.smallCard h2 {
+  margin: 0;
+}
+
+.smallCard p {
+  color: #6b7280;
+}
+
+/* SECTION */
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+.sectionHeader span {
+  background: #f3f4f6;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+/* FOOD */
+
+/* .foodGrid {
+  padding: 30px 20px;
+} */
+
+.foodCard {
+  width: 350px;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.newTag {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+
+  background: #8b5cf6;
+  color: white;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.timeTag {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+  background: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.foodBody {
+  padding: 20px;
+}
+
+.foodBody h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.foodBody p {
+  color: #6b7280;
+}
+
+.foodFooter {
+  margin-top: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.addBtn {
+  border: none;
+  background: #f59e0b;
+  color: white;
+
+  padding: 12px 24px;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  /* .page {
+    margin: 10px 1%;
+    width: 96%;
+  } */
+  .restaurantName {
+    font-size: 42px;
+  }
+
+  .offerWrapper,
+  .cardsRow {
+    grid-template-columns: 1fr;
+  }
+  .cardsRow {
+    width: 90vw;
+    padding: 20px 1%;
+  }
+
+  .heroContent {
+    left: 24px;
+  }
+
+  .restaurantInfo {
+    flex-direction: column;
+  }
+  /* .foodGrid {
+    display: grid;
+  } */
+
+  .foodCard {
+    width: 100%;
+  }
+  .page {
+    margin: 0;
+  }
+  .offerCard {
+    margin-top: 0px;
+  }
+  .fristOfferCard {
+    margin-top: 55px;
+  }
+  .smallCard {
+    padding: 10px;
+  }
+  .hero {
+    width: 97%;
+  }
+  .container {
+    margin: 0;
+  }
+}
+
+/* ..................... restorent info */
+
+.container {
+  padding: 32px;
+  background: #fafafa;
+}
+
+/* SECTION */
+
+.section {
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+/* ABOUT GRID */
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.infoCard p {
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.infoCard h4 {
+  font-size: 24px;
+  color: #222;
+}
+
+/* CONTACT */
+
+.contactCard {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 18px;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.contactCard span {
+  font-size: 28px;
+}
+
+.contactCard p {
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.contactCard h4 {
+  font-size: 22px;
+}
+
+/* LOCATION */
+
+.locationCard {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.mapTop {
+  height: 220px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 179, 71, 0.25),
+      transparent 60%
+    ),
+    #fff8ec;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pin {
+  font-size: 46px;
+}
+
+.mapButton {
+  border: none;
+  background: #f59e0b;
+  color: white;
+  font-weight: 600;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.locationContent {
+  padding: 24px;
+}
+
+.locationContent h4 {
+  margin-bottom: 10px;
+}
+
+.locationContent p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.locationContent span {
+  color: #999;
+  font-size: 14px;
+}
+
+/* HOURS */
+
+.hourRow {
+  background: white;
+  padding: 22px 24px;
+  margin-bottom: 14px;
+
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.openStatus {
+  background: #dcfce7;
+  color: #15803d;
+
+  padding: 18px 24px;
+  border-radius: 18px;
+  font-weight: 600;
+}
+
+/* PAYMENT */
+
+.paymentMethods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.paymentMethods span {
+  background: white;
+
+  padding: 12px 20px;
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .hourRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contactCard {
+    padding: 18px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.InfoSection {
+  display: none;
+}
+.menuSection {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  right: 78px;
+  /* left: 110px; */
+  top: 2px;
+
+  width: 170px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  display: none;
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.actionMenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown button {
+  width: 100%;
+  border: none;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background: #f8fafc;
+}
+.accountError {
+  width: 95%;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 2px solid rgb(247, 100, 100);
+  border-radius: 10px;
+  color: red;
+  background-color: rgb(249, 226, 226);
+}
+
+.foodGrid {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .foodGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .foodGrid {
+    grid-template-columns: 1fr;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}

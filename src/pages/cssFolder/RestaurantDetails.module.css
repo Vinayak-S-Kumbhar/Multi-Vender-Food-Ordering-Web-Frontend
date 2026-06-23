@@ -1,0 +1,317 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+.container {
+  background: #f7f8fc;
+  min-height: 100vh;
+  padding: 20px;
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+/* HEADER */
+
+.header {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.profileSection {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e8f0ff;
+  color: #3563e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.restaurantName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.approved {
+  background: #e7f8ed;
+  color: #02df53;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pending {
+  background: #fff4d4;
+  color: #f58403;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.suspended {
+  background: #ffe3e3;
+  color: #e91c1c;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.meta,
+.cuisine {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.Btns {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 5px;
+}
+.suspendBtn {
+  background: white;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.AcceptBtn {
+  background: white;
+  border: 1px solid #78fc4c;
+  color: #26a400;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* STATS */
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.statCard span {
+  color: #777;
+  font-size: 13px;
+}
+
+.statCard h3 {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+/* CONTENT */
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.card h4 {
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #666;
+}
+
+.infoItem {
+  margin-bottom: 14px;
+}
+
+.infoItem strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.infoItem p {
+  color: #555;
+  font-size: 14px;
+}
+
+.activityList {
+  padding-left: 20px;
+}
+
+.activityList li {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* MENU */
+
+.menuSection {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  border: none;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.activeFilter {
+  background: #111827 !important;
+  color: white;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 14px;
+  background: #f8fafc;
+  color: #555;
+  font-size: 14px;
+}
+
+.table td {
+  padding: 14px;
+  border-top: 1px solid #eee;
+}
+
+.live {
+  background: #e8f8ec;
+  color: #1f8f45;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.off {
+  background: #f3f4f6;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .profileSection {
+    width: 100%;
+  }
+
+  .restaurantName {
+    flex-wrap: wrap;
+  }
+
+  .suspendBtn {
+    width: 100%;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .menuHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .filters {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .filters button {
+    white-space: nowrap;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

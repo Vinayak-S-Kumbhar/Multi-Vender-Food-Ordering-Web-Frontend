@@ -1,0 +1,410 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+  width: 100%;
+}
+
+/* ================= MAIN ================= */
+.accountError {
+  width: 95%;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: 2px solid rgb(247, 100, 100);
+  border-radius: 10px;
+  color: red;
+  background-color: rgb(249, 226, 226);
+}
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.subHeading {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* ================= HOTEL SECTION ================= */
+
+.hotelSection {
+  margin-bottom: 32px;
+}
+
+.hotelSection h1 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.hotelList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hotelCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  width: 280px;
+  min-width: 280px;
+
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.hotelCard:hover {
+  transform: translateY(-3px);
+}
+
+.activeHotel {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+/* ================= DASHBOARD CARDS ================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6b3d;
+}
+
+/* ================= TABLE ================= */
+
+.tableContainer {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tableHeader h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.orderCount {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  background: #f8fafc;
+}
+
+.table th {
+  text-align: left;
+  padding: 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* ================= ORDER INFO ================= */
+
+.orderId {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.customerInfo h4 {
+  margin: 0;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.customerInfo p {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+/* ================= LOCATION ================= */
+
+.locationInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.locationInfo span {
+  color: #111827;
+  font-weight: 600;
+}
+
+.locationInfo small {
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* ================= ITEMS ================= */
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemCount {
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.itemPreview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.itemBadge {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ================= AMOUNT ================= */
+
+.amount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.preparing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delivered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.paid {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.unpaid {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ================= TIME ================= */
+
+.time {
+  white-space: nowrap;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/* ================= EMPTY ================= */
+
+.noOrders {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* ================= SCROLLBAR ================= */
+
+.tableWrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 12px;
+    width: 95%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .subHeading {
+    font-size: 0.85rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hotelList {
+    flex-direction: column;
+  }
+
+  .hotelCard {
+    width: 87%;
+    min-width: 87%;
+  }
+
+  .tableContainer {
+    padding: 16px;
+  }
+
+  .tableHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tableHeader h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 1.35rem;
+  }
+
+  .subHeading {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+  }
+
+  .tableContainer {
+    padding: 12px;
+  }
+}

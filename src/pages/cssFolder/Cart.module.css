@@ -1,0 +1,540 @@
+/* ─── Page Wrapper ─────────────────────────────────────────────── */
+.pageWrapper {
+  background: #f5f5f6;
+  min-height: 100vh;
+  padding-bottom: 32px;
+}
+
+.cartContainer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ─── Page Header ───────────────────────────────────────────────── */
+.pageHeader {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.restaurantCount {
+  font-size: 12px;
+  font-weight: 600;
+  color: #93959f;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.deliveryRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.deliveryLabel {
+  font-size: 19px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.deliveryAddr {
+  font-size: 13px;
+  color: #93959f;
+}
+
+/* ─── Savings Banner ────────────────────────────────────────────── */
+.savingsBanner {
+  background: #e8f4fd;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1565c0;
+}
+
+.savingsBanner strong {
+  font-weight: 800;
+}
+
+.savingsEmoji {
+  font-size: 18px;
+}
+
+/* ─── Restaurant Card ───────────────────────────────────────────── */
+.restaurantCard {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.restaurantHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px 14px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.restaurantInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.restaurantImgWrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  flex-shrink: 0;
+}
+
+.restaurantImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurantName {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 5px;
+  letter-spacing: -0.2px;
+}
+
+.deliveryTime {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #93959f;
+}
+
+.clockIcon {
+  color: #93959f;
+}
+
+.removeRestBtn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #93959f;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.removeRestBtn:hover {
+  color: #e23744;
+}
+
+/* ─── Items List ────────────────────────────────────────────────── */
+.itemsList {
+  padding: 0 18px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.cartItemBorder {
+  border-bottom: 1px dashed #ebebeb;
+}
+
+.itemLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+  padding-right: 16px;
+}
+
+/* Veg indicator — green square with circle dot (like Zomato) */
+.vegIndicator {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid #3ab757;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  position: relative;
+}
+
+.vegIndicator::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #3ab757;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.itemName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.itemDesc {
+  font-size: 12px;
+  color: #93959f;
+  line-height: 1.4;
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  color: #e23744;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+.itemRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Quantity Control — border box like Zomato */
+.qtyControl {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #e23744;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  color: #e23744;
+  font-size: 20px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1;
+  transition: background 0.12s;
+  padding-bottom: 2px;
+}
+
+.qtyBtn:hover {
+  background: #fff0f1;
+}
+
+.qtyValue {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a1a;
+  min-width: 28px;
+  text-align: center;
+}
+
+.itemPrice {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ─── Add More Items ────────────────────────────────────────────── */
+.addMoreBtn {
+  background: none;
+  border: none;
+  color: #e23744;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 18px 14px;
+  display: block;
+  text-align: left;
+  transition: opacity 0.15s;
+}
+
+.addMoreBtn:hover {
+  opacity: 0.75;
+}
+
+/* ─── Footer Actions (Note / Cutlery) ───────────────────────────── */
+.restaurantFooter {
+  display: flex;
+  border-top: 1px solid #f5f5f5;
+  padding: 10px 18px;
+  gap: 10px;
+}
+
+.footerActionBtn {
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #696969;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+  transition: background 0.12s;
+  white-space: nowrap;
+}
+
+.footerActionBtn:hover {
+  background: #f0f0f0;
+}
+
+/* ─── Note Input ────────────────────────────────────────────────── */
+.noteBox {
+  padding: 0 18px 14px;
+}
+
+.noteInput {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #e23744;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #1a1a1a;
+  outline: none;
+  background: #fff8f8;
+  transition: border-color 0.15s;
+}
+
+.noteInput::placeholder {
+  color: #bbb;
+}
+
+/* ─── Bill Card (inside restaurant card) ────────────────────────── */
+.billCard {
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  padding: 16px 18px 12px;
+}
+
+.billTitle {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 12px;
+  letter-spacing: -0.1px;
+}
+
+.billRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #3d3d3d;
+  padding: 6px 0;
+}
+
+.deliveryFeeBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feeOriginal {
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.savingsRow {
+  color: #3ab757;
+  font-weight: 600;
+}
+
+.billDivider {
+  height: 1px;
+  background: #ebebeb;
+  margin: 8px 0;
+}
+
+.grandTotal {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1a1a1a;
+  padding-top: 8px;
+}
+
+/* ─── Per-Restaurant Checkout Bar ───────────────────────────────── */
+.restaurantCheckoutBar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px 16px;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.checkoutTotal {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkoutAmount {
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.1;
+}
+
+.checkoutItems {
+  font-size: 12px;
+  color: #93959f;
+  font-weight: 500;
+}
+
+.checkoutBtn {
+  flex: 1;
+  padding: 14px 20px;
+  background: #e23744;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+.checkoutBtn:hover {
+  background: #c93340;
+}
+
+.checkoutBtn:active {
+  transform: scale(0.98);
+}
+
+/* ─── Safety Note ───────────────────────────────────────────────── */
+.safetyNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #93959f;
+  padding: 4px 2px;
+  line-height: 1.5;
+}
+
+.safetyNote svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ─── Empty State ───────────────────────────────────────────────── */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.emptyIcon {
+  font-size: 72px;
+  margin-bottom: 20px;
+  filter: grayscale(0.3);
+}
+
+.emptyState h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.emptyState p {
+  font-size: 15px;
+  color: #93959f;
+  margin: 0 0 28px;
+}
+
+.actionBtn {
+  background: #e23744;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.actionBtn:hover {
+  background: #c93340;
+}
+
+.cancelBtn {
+  background: none;
+  border: none;
+  color: #e23744;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  margin: 0 0 10px 10px;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.cancelBtn:hover {
+  transform: rotate(90deg) scale(1.2);
+  color: #c93340;
+}
+
+.cancelBtn:active {
+  transform: rotate(90deg) scale(0.9);
+}

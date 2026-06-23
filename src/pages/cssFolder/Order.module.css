@@ -1,0 +1,348 @@
+.checkoutContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 80px;
+  background: #f8f9fb;
+  min-height: 100vh;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.left {
+  width: 50%;
+}
+
+.left h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.right {
+  width: 45%;
+  position: sticky;
+  top: 20px;
+}
+
+/* ================= CARDS ================= */
+
+.summaryCard,
+.billCard,
+.paymentCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.summaryTitle,
+.billTitle,
+.paymentTitle {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ================= RESTAURANT INFO ================= */
+
+.restaurantInfo h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.restaurantInfo span {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-size: 14px;
+}
+
+.notePreview {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #444;
+}
+
+/* ================= SAVINGS BANNER ================= */
+
+.savingsBanner {
+  background: #e8f9ed;
+  color: #0f8a3d;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* ================= BILL DETAILS ================= */
+
+.billRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.billDivider {
+  height: 1px;
+  background: #ececec;
+  margin: 12px 0;
+}
+
+.deliveryFeeBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.feeOriginal {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.savingsRow {
+  color: #0f8a3d;
+  font-weight: 600;
+}
+
+.grandTotal {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ================= PAYMENT ================= */
+
+.pmWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pmItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pmItem:hover {
+  border-color: #ff6b3d;
+  background: #fff8f5;
+}
+
+.pmItem input[type="radio"] {
+  margin-top: 4px;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.pmText {
+  display: flex;
+  flex-direction: column;
+}
+
+.pmTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.pmDesc {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ================= TOTAL ROWS ================= */
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #333;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ================= CHECKOUT BAR ================= */
+
+.checkoutBar {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.checkoutAmount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.checkoutLabel {
+  font-size: 13px;
+  color: #777;
+}
+
+.button,
+.placeOrderBtn {
+  background: #eb4a19;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 25%;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button:hover,
+.placeOrderBtn:hover {
+  background: #e95b2f;
+}
+
+/* ================= FORM INPUTS ================= */
+
+.deliveryInfo input,
+.row input,
+.noteInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.deliveryInfo input:focus,
+.row input:focus,
+.noteInput:focus {
+  border-color: #ff6b3d;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* ================= TABLETS ================= */
+
+@media (max-width: 992px) {
+  .checkoutContainer {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .left {
+    width: 55%;
+  }
+
+  .right {
+    width: 45%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .checkoutContainer {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right {
+    position: static;
+  }
+
+  .left h1 {
+    font-size: 1.4rem;
+  }
+
+  .summaryCard,
+  .billCard,
+  .paymentCard {
+    padding: 16px;
+  }
+
+  .checkoutBar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .button,
+  .placeOrderBtn {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .checkoutContainer {
+    padding: 12px;
+  }
+
+  .left h1 {
+    font-size: 1.2rem;
+  }
+
+  .summaryTitle,
+  .billTitle,
+  .paymentTitle {
+    font-size: 16px;
+  }
+
+  .checkoutAmount {
+    font-size: 20px;
+  }
+
+  .pmTitle {
+    font-size: 14px;
+  }
+
+  .pmDesc {
+    font-size: 12px;
+  }
+
+  .button,
+  .placeOrderBtn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

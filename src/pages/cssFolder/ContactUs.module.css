@@ -1,0 +1,115 @@
+.contactContainer {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactContainer h1 {
+  font-size: 36px;
+  color: #e23744; /* Zomato red */
+  margin-bottom: 8px;
+}
+
+.contactSubtitle {
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contactCard {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.contactCard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactCard input,
+.contactCard textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.contactCard input:focus,
+.contactCard textarea:focus {
+  border-color: #e23744;
+}
+
+.contactCard button {
+  background: #e23744;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contactCard button:hover {
+  background: #c81e34;
+}
+
+/* Options box */
+.dropdownOptions {
+  margin-top: 8px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.selectWrapper {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.selectWrapper select {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #444;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #fff;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Custom arrow */
+.selectWrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9e9e9e;
+  pointer-events: none;
+}
+
+/* Placeholder color */
+select option[value=""] {
+  color: #9e9e9e;
+}
+
+/* Focus effect */
+.selectWrapper select:focus {
+  border-color: #e23744;
+}

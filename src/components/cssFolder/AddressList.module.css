@@ -1,0 +1,385 @@
+/* .addressContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerLeft h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.countBadge {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #ff6b1a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.addressList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addressCard {
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 22px;
+  padding: 24px;
+  background: #fff;
+}
+
+.defaultCard {
+  border: 1.5px solid #ffb38a;
+}
+
+.defaultBadge {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  background: #ff6b1a;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.addressType {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ececec;
+  padding: 8px 14px;
+  border-radius: 12px;
+  width: fit-content;
+  color: #444;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.iconButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  background: #fafafa;
+}
+
+.addressDetails {
+  margin-top: 18px;
+}
+
+.addressDetails h4 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #222;
+  font-weight: 700;
+}
+
+.addressDetails p {
+  margin: 6px 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: #8d4c68;
+  font-weight: 500;
+}
+
+.defaultButton {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: 1px solid #ead5b6;
+  border-radius: 12px;
+  background: #fff8ef;
+  color: #9a6a2d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.defaultButton:hover {
+  background: #fff3e4;
+}
+
+@media (max-width: 768px) {
+  .addressContainer {
+    padding: 16px;
+  }
+
+  .addressCard {
+    padding: 18px;
+  }
+
+  .cardTop {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .addressDetails h4 {
+    font-size: 18px;
+  }
+
+  .iconButton {
+    width: 36px;
+    height: 36px;
+  }
+} */
+
+.addressContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerLeft h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.countBadge {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #ff6b1a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* 2 cards per row */
+.addressList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.addressCard {
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.addressCard:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.defaultCard {
+  border: 1.5px solid #ffb38a;
+}
+
+.defaultBadge {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  background: #ff6b1a;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.addressType {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ececec;
+  padding: 6px 12px;
+  border-radius: 10px;
+  width: fit-content;
+  color: #444;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.iconButton {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.iconButton:hover {
+  background: #fafafa;
+  transform: translateY(-1px);
+}
+
+.addressDetails {
+  margin-top: 14px;
+}
+
+.addressDetails h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 700;
+}
+
+.addressDetails p {
+  margin: 4px 0;
+  color: #666;
+  line-height: 1.4;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: #8d4c68;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.defaultButton {
+  margin-top: 14px;
+  padding: 8px 14px;
+  border: 1px solid #ead5b6;
+  border-radius: 10px;
+  background: #fff8ef;
+  color: #9a6a2d;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.defaultButton:hover {
+  background: #fff3e4;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .addressList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .addressContainer {
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .addressList {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .addressCard {
+    padding: 14px;
+  }
+
+  .headerLeft h3 {
+    font-size: 18px;
+  }
+
+  .addressDetails h4 {
+    font-size: 16px;
+  }
+
+  .iconButton {
+    width: 32px;
+    height: 32px;
+  }
+
+  .defaultButton {
+    width: 100%;
+  }
+}
