@@ -12,7 +12,7 @@ import {
 import { FaStarHalfAlt } from "react-icons/fa";
 
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import api from "../api/axiosInstance";
 import toast from "react-hot-toast";
 import Loading from "../components/Loading";
@@ -38,6 +38,16 @@ const FoodPage = () => {
   const [addingToCart, setAddingToCart] = useState(false);
   const userId = localStorage.getItem("userId");
 
+  const location = useLocation();
+
+  const stateRestorent = location.state?.restorent;
+
+  const foodFromState = stateRestorent?.foodItemList?.find(
+    (item) => item.id === Number(foodId),
+  );
+
+  const shouldFetch = !foodFromState;
+
   const {
     data: restorentData,
     isLoading,
@@ -46,7 +56,8 @@ const FoodPage = () => {
   } = useQuery({
     queryKey: ["Restorent/Food", foodId],
     queryFn: () => FetchRestorentAndFood(foodId),
-    enabled: !!foodId,
+    enabled: shouldFetch,
+    initialData: foodFromState ? { data: stateRestorent } : undefined,
     staleTime: Infinity,
   });
 
@@ -75,7 +86,7 @@ const FoodPage = () => {
       toast.error(ermsg || "Something went wrong");
       navigate("/");
     }
-  }, [isError, error]);
+  }, [isError, error, navigate]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -400,6 +411,7 @@ const FoodPage = () => {
               key={food.id}
               className={styles.foodLink}
               onClick={() => setQuantity(1)}
+              state={{ restorent }}
             >
               <Food
                 food={food}
