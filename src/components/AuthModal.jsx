@@ -4,6 +4,7 @@ import { FaGoogle, FaGithub } from "react-icons/fa";
 import toast from "react-hot-toast";
 import axios from "axios";
 import api from "../api/axiosInstance";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 import { useNavigate } from "react-router-dom";
 import { useQueryClient } from "@tanstack/react-query";
@@ -103,8 +104,7 @@ const AuthModal = ({ setAuthTrigger, setSigneIn }) => {
                 type="button"
                 className={styles.socialBtn}
                 onClick={() => {
-                  window.location.href =
-                    "https://multi-vender-food-ordering-web-bakend.onrender.com/oauth2/authorization/google";
+                  window.location.href = `${apiUrl}/oauth2/authorization/google`;
                 }}
               >
                 <FaGoogle /> Continue with Google
@@ -186,15 +186,10 @@ const AuthModal = ({ setAuthTrigger, setSigneIn }) => {
                 type="button"
                 className={styles.socialBtn}
                 onClick={() => {
-                  window.location.href =
-                    "http://localhost:8080/oauth2/authorization/google";
+                  window.location.href = `${apiUrl}/oauth2/authorization/google`;
                 }}
               >
                 <FaGoogle /> Continue with Google
-              </button>
-
-              <button type="button" className={styles.socialBtn}>
-                <FaGithub /> Continue with GitHub
               </button>
 
               <div className={styles.divider}>
